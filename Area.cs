@@ -30,14 +30,12 @@ namespace AreaGeometricFigure
                 case 3://3 стороны - площадь треугольника
                     double p = Values[0] + Values[1] + Values[2];
                     area = Math.Sqrt(p * (p - Values[0]) * (p - Values[1]) * (p - Values[2]));
-                    IsoscelesTriangle(Values[0], Values[1], Values[2]);
                     return area;
                 default:
                     return area;
             }
         }
-        public bool TriangleIsRectangular;
-        void IsoscelesTriangle(double a, double b, double c)//Проверка на прямоугольность треугольника
+        public bool RightTriangle(double a, double b, double c)//Проверка на прямоугольность треугольника
         {
             double BigerSide;
             
@@ -63,8 +61,10 @@ namespace AreaGeometricFigure
             Math.Pow(BigerSide, 2);
             if(Math.Pow(BigerSide, 2) == Math.Pow(a, 2) + Math.Pow(b, 2))
             {
-                Console.WriteLine("Треугольник прямоугольный");
+               return true;
             }
+            else
+                return false;
             
         }
     }
