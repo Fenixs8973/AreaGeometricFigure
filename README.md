@@ -13,3 +13,5 @@ Area area = new Area();
 
 Круг: area.Figure(радиус, 0, 0)
 
+SQL запрос: SELECT `Имя продукта`, `Имя категории` FROM `Имя таблицы`;
+
