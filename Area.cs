@@ -56,9 +56,8 @@ namespace AreaGeometricFigure
             {
                 BigerSide = c;
             }
-                
 
-            Math.Pow(BigerSide, 2);
+
             if(Math.Pow(BigerSide, 2) == Math.Pow(a, 2) + Math.Pow(b, 2))
             {
                return true;
