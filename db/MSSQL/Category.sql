@@ -1,5 +1,0 @@
-CREATE TABLE [dbo].[Category]
-(
-  [Id] INT NOT NULL PRIMARY KEY
-  [Name] TEXT NOT NULL
-)
