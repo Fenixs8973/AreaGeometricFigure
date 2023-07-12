@@ -17,8 +17,7 @@
         {
             double p = (a + b + c) / 2;
             double result;
-            Figure f = new Figure();
-            Console.WriteLine(RightTriangle(a, b, c));
+            Console.WriteLine("Треугольник прямоугольный: " + RightTriangle(a, b, c));
             return result = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
         }
 
@@ -33,6 +32,7 @@
             double b = 0;
             double c = k[0];
             int cIndex = 0;
+            
             //Присваиваем переменной c самое большое значение
             for(int i = 0; i < 3; i++)
             {
@@ -42,6 +42,7 @@
                     cIndex = i;
                 }
             }
+
             //Присваиваем значение остальным двум переменным
             for(int i = 0; i < 3; i++)
             {
@@ -61,7 +62,7 @@
         }
 
         //<summary>
-        //Unit - тесты
+        //Unit тесты
         //</summary>
         public void UnitTest()
         {
